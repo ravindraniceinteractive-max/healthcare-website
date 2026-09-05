@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Healthcare Medical Center</title>
+    <meta name="description" content="Reach our patient support desk, clinical departments, billing office, and directions to our medical center in New York, NY.">
+    <link rel="canonical" href="contact.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/home-responsive.css">
+    <link rel="stylesheet" href="css/inner-pages.css">
+    <link rel="stylesheet" href="css/inner-responsive.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper fw">
+
+    <!-- ==================== HEADER ==================== -->
+    <div class="head-sec fw f-nav">
+        <div class="logo-menu fw">
+            <div class="container">
+                <div class="logo-menu-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" width="403" height="72" alt="Healthcare">
+                        </a>
+
+                        <a class="tab-call" href="tel:+18005550199">
+                            <span class="svg-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                            </span>
+                            <span class="text">Call</span>
+                        </a>
+
+                        <button type="button" class="showhide" onclick="toggleMenu();" aria-label="Toggle navigation">
+                            <span class="menuBar menuBar-1"></span>
+                            <span class="menuBar menuBar-2"></span>
+                            <span class="menuBar menuBar-3"></span>
+                        </button>
+                    </div>
+
+                    <div class="topmenu">
+                        <ul class="primary-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="services.html">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="service-detail.html">Cardiology</a></li>
+                                    <li><a href="services.html">Primary Care</a></li>
+                                    <li><a href="services.html">Women's Health</a></li>
+                                    <li><a href="services.html">Diagnostics</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="doctors.html">Doctors</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo-rit">
+                        <div class="top-rit">
+                            <a class="header-phone" href="tel:+18005550199">
+                                <span class="svg-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                                </span>
+                                <span>
+                                    <small>Call Us Today</small>
+                                    +1 (800) 555-0199
+                                </span>
+                            </a>
+
+                            <a href="appointments.html" class="button">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-button-container fw">
+            <button class="mobileMenuToggle" onclick="toggleMenu();" aria-label="Open mobile menu">
+                <span class="svg-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </span>
+                <span class="menu-text">Menu</span>
+            </button>
+
+            <a class="mobi-call" href="tel:+18005550199">
+                <span class="svg-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                </span>
+                <span class="button-text">Call</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== MOBILE NAVIGATION DRAWER ==================== -->
+    <div class="mobinav">
+        <button type="button" class="menuClose" onclick="toggleMenu();" aria-label="Close mobile menu">&times;</button>
+        <ul class="primary-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="menu-item-has-children">
+                <a href="services.html">Services</a>
+                <span class="drop close"></span>
+                <ul class="sub-menu">
+                    <li><a href="service-detail.html">Cardiology</a></li>
+                    <li><a href="services.html">Primary Care</a></li>
+                    <li><a href="services.html">Women's Health</a></li>
+                    <li><a href="services.html">Diagnostics</a></li>
+                </ul>
+            </li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="top-call">
+            <p>
+                <a href="tel:+18005550199">
+                    <span>Call Us Today</span>
+                    +1 (800) 555-0199
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="mobinav-backdrop"></div>
+
+    <!-- ==================== INNER BANNER ==================== -->
+    <div class="inner-banner fw">
+        <div class="container">
+            <div class="banner-inner-content">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Contact Us</li>
+                </ul>
+                <h1>Get in Touch with Our Clinical Team</h1>
+                <p>
+                    Whether you have questions regarding treatment plans, insurance coverage, or facility access, we are here to support you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-page-sec fw">
+        <div class="container">
+            <!-- Contact Cards Grid -->
+            <div class="contact-cards-grid">
+                <div class="contact-info-card">
+                    <div class="icon-circle">📍</div>
+                    <h4>Our Location</h4>
+                    <p>123 Medical Center Drive<br>New York, NY 10001</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="icon-circle">📞</div>
+                    <h4>Phone &amp; Triage</h4>
+                    <p><a href="tel:+18005550199" style="color: var(--primary-blue); font-weight: 700;">+1 (800) 555-0199</a><br>Fax: +1 (800) 555-0198</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="icon-circle">✉</div>
+                    <h4>Email Inquiries</h4>
+                    <p><a href="mailto:info@example.com" style="color: var(--secondary-teal); font-weight: 600;">info@example.com</a><br>billing@example.com</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="icon-circle">⏱</div>
+                    <h4>Operating Hours</h4>
+                    <p>Mon–Fri: 8:00 AM – 6:00 PM<br>Sat: 9:00 AM – 2:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Layout: Form + Map -->
+            <div class="contact-layout-grid">
+                <!-- Form Card -->
+                <div class="appointment-form-card">
+                    <span class="section-label">SEND A MESSAGE</span>
+                    <h2>How Can We Assist You?</h2>
+                    <p>Send an inquiry to our administrative and nursing team. We respond within one business day.</p>
+
+                    <div id="contactSuccessBanner" class="form-success-banner">
+                        <strong>Thank you for contacting us!</strong> Your message has been routed to our patient desk. We will respond promptly.
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contactName">Full Name <span class="req">*</span></label>
+                                <input type="text" id="contactName" name="contactName" placeholder="Jane Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address <span class="req">*</span></label>
+                                <input type="email" id="contactEmail" name="contactEmail" placeholder="jane@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" placeholder="+1 (555) 000-0000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject <span class="req">*</span></label>
+                                <select id="contactSubject" name="contactSubject" required>
+                                    <option value="" disabled selected>Select an inquiry topic</option>
+                                    <option value="General Question">General Healthcare Inquiry</option>
+                                    <option value="Billing & Insurance">Billing &amp; Insurance Verification</option>
+                                    <option value="Medical Records">Medical Records Request</option>
+                                    <option value="Feedback">Patient Feedback / Compliment</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-full">
+                                <label for="contactMessage">Your Message <span class="req">*</span></label>
+                                <textarea id="contactMessage" name="contactMessage" placeholder="How can our clinical or administrative team assist you today?" required></textarea>
+                            </div>
+
+                            <div class="form-group col-full" style="margin-top: 10px;">
+                                <button type="submit" class="button" style="width: 100%; padding: 18px;">Send Inquiry</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Map & Directions -->
+                <div class="map-placeholder-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1650000000000!5m2!1sen!2s"
+                        title="Healthcare Medical Center Location"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    <div style="background: #ffffff; padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color); width: 100%; margin-top: 24px; text-align: left;">
+                        <h4 style="color: var(--primary-blue); font-size: 1.1rem; margin-bottom: 6px;">Parking &amp; Transit Info</h4>
+                        <p style="font-size: 0.88rem; margin: 0; color: var(--text-secondary);">
+                            Underground patient parking garage available 24/7 with complimentary validation at reception. Easily accessible via public transit lines A, C, E and 1 subway stations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div class="site-footer fw">
+        <div class="container">
+            <div class="ftmenu fw">
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="ftr-blocks fw">
+                <div class="footer-column">
+                    <h3>Healthcare</h3>
+                    <p>Compassionate healthcare powered by experience, technology and a commitment to every patient.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33zM9.75 15.02l.02-6.54 5.75 3.27-5.77 3.27z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">Patient Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>
+                        123 Medical Center Drive<br>
+                        New York, NY 10001
+                    </p>
+                    <p><a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Hours</h3>
+                    <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
+                    <p>Saturday: 9:00 AM – 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+
+                    <a href="appointments.html" class="button">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrights fw">
+            <div class="container">
+                <div class="cpy-inr">
+                    <p class="copy-para">© 2026 Healthcare. All Rights Reserved.</p>
+                </div>
+                <div class="ftrlink">
+                    <ul class="copyrightmenu">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* ==========================================================================
+   HEALTHCARE MODERN WEBSITE - INNER PAGES RESPONSIVE STYLES
+   Exact breakpoints required by specifications
+   ========================================================================== */
+
+@media screen and (max-width:1900px) {}
+
+@media screen and (max-width:1800px) {}
+
+@media screen and (max-width:1700px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .hm-testimonials .itm-bg {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .inner-banner h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .leadership-grid {
+        gap: 20px;
+    }
+    
+    .services-catalog-grid {
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .about-intro-grid,
+    .service-detail-layout,
+    .doctor-bio-layout,
+    .appointment-page-grid,
+    .contact-layout-grid {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .contact-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .container {
+        max-width: 990px;
+        padding: 0 10px;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .doctors-grid-catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-intro-gallery {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .service-detail-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-sidebar {
+        position: static;
+        margin-top: 40px;
+    }
+    
+    .profile-card-top {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .profile-avatar-box {
+        max-width: 320px;
+        margin: 0 auto;
+        height: 360px;
+    }
+    
+    .quick-meta-list {
+        justify-content: center;
+    }
+    
+    .doctor-bio-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .appointment-page-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: 720px;
+        padding: 0;
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .services-catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+    
+    .inner-banner {
+        padding: 130px 0 50px 0;
+    }
+    
+    .inner-banner h1 {
+        font-size: 2.2rem;
+    }
+    
+    .services-catalog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .conditions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .doctors-grid-catalog {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        margin: 0 auto;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group.col-full {
+        grid-column: span 1;
+    }
+    
+    .appointment-form-card {
+        padding: 36px 24px;
+        border-radius: 20px;
+    }
+    
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .step-card {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .quick-meta-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .about-intro-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-gallery-card:nth-child(2) {
+        margin-top: 0;
+    }
+    
+    .service-featured-img img {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-category-pills {
+        gap: 8px;
+    }
+    
+    .category-pill {
+        padding: 8px 16px;
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .inner-banner h1 {
+        font-size: 1.85rem;
+    }
+    
+    .filter-bar-wrapper {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .inner-banner h1 {
+        font-size: 1.6rem;
+    }
+    
+    .container {
+        padding: 0 8px;
+    }
+}

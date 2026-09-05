@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare | Quality Care You Can Trust</title>
+    <meta name="description" content="Compassionate, patient-centered healthcare powered by board-certified specialists, modern medical technology, and comprehensive clinical services.">
+    <link rel="canonical" href="index.html">
+
+    <!-- Swiper & Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/home-responsive.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper fw">
+
+    <!-- ==================== HEADER ==================== -->
+    <div class="head-sec fw f-nav">
+        <div class="logo-menu fw">
+            <div class="container">
+                <div class="logo-menu-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" width="403" height="72" alt="Healthcare">
+                        </a>
+
+                        <a class="tab-call" href="tel:+18005550199">
+                            <span class="svg-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                            </span>
+                            <span class="text">Call</span>
+                        </a>
+
+                        <button type="button" class="showhide" onclick="toggleMenu();" aria-label="Toggle navigation">
+                            <span class="menuBar menuBar-1"></span>
+                            <span class="menuBar menuBar-2"></span>
+                            <span class="menuBar menuBar-3"></span>
+                        </button>
+                    </div>
+
+                    <div class="topmenu">
+                        <ul class="primary-menu">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="services.html">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="service-detail.html">Cardiology</a></li>
+                                    <li><a href="services.html">Primary Care</a></li>
+                                    <li><a href="services.html">Women's Health</a></li>
+                                    <li><a href="services.html">Diagnostics</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="doctors.html">Doctors</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo-rit">
+                        <div class="top-rit">
+                            <a class="header-phone" href="tel:+18005550199">
+                                <span class="svg-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                                </span>
+                                <span>
+                                    <small>Call Us Today</small>
+                                    +1 (800) 555-0199
+                                </span>
+                            </a>
+
+                            <a href="appointments.html" class="button">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-button-container fw">
+            <button class="mobileMenuToggle" onclick="toggleMenu();" aria-label="Open mobile menu">
+                <span class="svg-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </span>
+                <span class="menu-text">Menu</span>
+            </button>
+
+            <a class="mobi-call" href="tel:+18005550199">
+                <span class="svg-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                </span>
+                <span class="button-text">Call</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== MOBILE NAVIGATION DRAWER ==================== -->
+    <div class="mobinav">
+        <button type="button" class="menuClose" onclick="toggleMenu();" aria-label="Close mobile menu">&times;</button>
+
+        <ul class="primary-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="menu-item-has-children">
+                <a href="services.html">Services</a>
+                <span class="drop close"></span>
+                <ul class="sub-menu">
+                    <li><a href="service-detail.html">Cardiology</a></li>
+                    <li><a href="services.html">Primary Care</a></li>
+                    <li><a href="services.html">Women's Health</a></li>
+                    <li><a href="services.html">Diagnostics</a></li>
+                </ul>
+            </li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="top-call">
+            <p>
+                <a href="tel:+18005550199">
+                    <span>Call Us Today</span>
+                    +1 (800) 555-0199
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="mobinav-backdrop"></div>
+
+    <!-- ==================== HERO / BANNER ==================== -->
+    <div class="banner-sec fw">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">YOUR HEALTH. OUR PRIORITY.</span>
+                    <h1>Exceptional Healthcare, <span>Centered Around You.</span></h1>
+                    <p>
+                        We combine leading medical experts, cutting-edge clinical technology, and deeply compassionate care to provide your family with an unmatched healthcare experience.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="appointments.html" class="button">Book an Appointment</a>
+                        <a href="services.html" class="outline-button">Explore Our Services</a>
+                    </div>
+
+                    <div class="hero-trust-indicators">
+                        <div class="trust-item">
+                            <strong>25+</strong>
+                            <span>Years of Care</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>50K+</strong>
+                            <span>Patients Served</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>40+</strong>
+                            <span>Medical Specialists</span>
+                        </div>
+                        <div class="trust-item">
+                            <strong>24/7</strong>
+                            <span>Patient Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-card">
+                        <img src="images/hero-doctor.jpg" alt="Compassionate doctor consulting patient">
+                    </div>
+
+                    <div class="floating-badge badge-top">
+                        <span class="badge-icon">✓</span>
+                        <div>
+                            <strong>Board-Certified</strong>
+                            <small>Nationally recognized specialists</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-bottom">
+                        <span class="badge-icon">★</span>
+                        <div>
+                            <strong>★★★★★ 4.9 Rating</strong>
+                            <small>Over 12,000 patient reviews</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== EMERGENCY / QUICK ACTION BAR ==================== -->
+    <section class="quick-action-sec fw">
+        <div class="container">
+            <div class="quick-actions">
+                <div class="quick-action">
+                    <span class="icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                    </span>
+                    <div>
+                        <small>Need Medical Help?</small>
+                        <strong><a href="tel:+18005550199">Call +1 (800) 555-0199</a></strong>
+                    </div>
+                </div>
+
+                <div class="quick-action">
+                    <span class="icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                    </span>
+                    <div>
+                        <small>Appointments</small>
+                        <strong><a href="appointments.html">Book Your Visit</a></strong>
+                    </div>
+                </div>
+
+                <div class="quick-action">
+                    <span class="icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </span>
+                    <div>
+                        <small>Find a Specialist</small>
+                        <strong><a href="doctors.html">Meet Our Doctors</a></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== INTRODUCTION SECTION ==================== -->
+    <section class="hm-about-sec fw">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="images/about-main.jpg" alt="Modern Healthcare Facility">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="images/about-team.jpg" alt="Collaborative Medical Specialists">
+                    </div>
+                    <div class="about-experience-badge">
+                        <strong>25</strong>
+                        <span>Years of Excellence</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-label">ABOUT OUR HEALTHCARE CENTER</span>
+                    <h2>Care That Puts You First.</h2>
+                    <p>
+                        We combine experienced medical professionals, advanced technology, and compassionate care to deliver better healthcare experiences for every patient.
+                    </p>
+
+                    <ul class="check-list">
+                        <li>Experienced medical professionals</li>
+                        <li>Advanced diagnostic technology</li>
+                        <li>Personalized treatment plans</li>
+                        <li>Patient-centered approach</li>
+                    </ul>
+
+                    <a href="about.html" class="button">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="hm-services fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">OUR SERVICES</span>
+                <h2>Comprehensive Care, All in One Place.</h2>
+                <p>
+                    From preventive care to specialized treatment, our medical team is here for every stage of your healthcare journey.
+                </p>
+            </div>
+
+            <div class="practice-blocks">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                    </div>
+                    <h3>Primary Care</h3>
+                    <p>Preventive care and ongoing treatment for individuals and families.</p>
+                    <a href="services.html">Learn More</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>Advanced cardiovascular evaluation and personalized treatment.</p>
+                    <a href="service-detail.html">Learn More</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a5 5 0 00-5 5c0 2.38 1.66 4.38 3.88 4.88L10 17H8v2h2v3h2v-3h2v-2h-2l-.88-5.12C15.34 11.38 17 9.38 17 7a5 5 0 00-5-5zm0 8a3 3 0 110-6 3 3 0 010 6z"/></svg>
+                    </div>
+                    <h3>Women's Health</h3>
+                    <p>Comprehensive care designed around women's unique health needs.</p>
+                    <a href="services.html">Learn More</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+                    </div>
+                    <h3>Diagnostics</h3>
+                    <p>Modern diagnostic services for accurate and timely medical decisions.</p>
+                    <a href="services.html">Learn More</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                    </div>
+                    <h3>Preventive Medicine</h3>
+                    <p>Stay ahead of health concerns with proactive wellness care.</p>
+                    <a href="services.html">Learn More</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14.5h-2v-2h2zm0-4h-2V7h2z"/></svg>
+                    </div>
+                    <h3>Urgent Care</h3>
+                    <p>Convenient care for unexpected non-life-threatening medical needs.</p>
+                    <a href="services.html">Learn More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-us-sec fw">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <span class="section-label">WHY PATIENTS TRUST US</span>
+                    <h2>Dedicated to Medical Excellence and Patient Wellbeing</h2>
+                    <p>
+                        We uphold clinical standards that put your comfort and peace of mind first. Our integrated team coordinates seamlessly across specialties for your best outcomes.
+                    </p>
+
+                    <div class="why-us-cards">
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> Experienced Specialists</h4>
+                            <p>Over 40 board-certified physicians with international clinical expertise.</p>
+                        </div>
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> Advanced Technology</h4>
+                            <p>State-of-the-art diagnostic imaging and minimally invasive surgical suites.</p>
+                        </div>
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> Personalized Care</h4>
+                            <p>Custom wellness and recovery roadmaps tailored to your biological profile.</p>
+                        </div>
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> Convenient Appointments</h4>
+                            <p>Same-day bookings, minimal wait times, and comprehensive telehealth care.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-us-image">
+                    <div class="why-us-image-inner">
+                        <img src="images/why-us.jpg" alt="Modern healthcare technology and care">
+                    </div>
+                    <div class="stat-floating-card">
+                        <strong>98%</strong>
+                        <span>Patient Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DOCTORS SECTION (Swiper) ==================== -->
+    <section class="hm-doctors fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">MEET OUR SPECIALISTS</span>
+                <h2>Experts Who Care About Your Health</h2>
+            </div>
+
+            <div class="slider doctors-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide doctor-card">
+                        <div class="doctor-image">
+                            <img src="images/doctor-1.jpg" alt="Dr. Sarah Mitchell">
+                        </div>
+                        <div class="doctor-content">
+                            <span class="specialty">Cardiology</span>
+                            <h3>Dr. Sarah Mitchell</h3>
+                            <p>MD, FACC</p>
+                            <a href="doctor-detail.html">View Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide doctor-card">
+                        <div class="doctor-image">
+                            <img src="images/doctor-2.jpg" alt="Dr. Marcus Vance">
+                        </div>
+                        <div class="doctor-content">
+                            <span class="specialty">Neurology</span>
+                            <h3>Dr. Marcus Vance</h3>
+                            <p>MD, PhD</p>
+                            <a href="doctor-detail.html">View Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide doctor-card">
+                        <div class="doctor-image">
+                            <img src="images/doctor-3.jpg" alt="Dr. Elena Rostova">
+                        </div>
+                        <div class="doctor-content">
+                            <span class="specialty">Pediatrics</span>
+                            <h3>Dr. Elena Rostova</h3>
+                            <p>MD, FAAP</p>
+                            <a href="doctor-detail.html">View Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide doctor-card">
+                        <div class="doctor-image">
+                            <img src="images/doctor-4.jpg" alt="Dr. David Chen">
+                        </div>
+                        <div class="doctor-content">
+                            <span class="specialty">Orthopedic Surgery</span>
+                            <h3>Dr. David Chen</h3>
+                            <p>MD, FAAOS</p>
+                            <a href="doctor-detail.html">View Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide doctor-card">
+                        <div class="doctor-image">
+                            <img src="images/doctor-5.jpg" alt="Dr. Rachel Adams">
+                        </div>
+                        <div class="doctor-content">
+                            <span class="specialty">Primary Care</span>
+                            <h3>Dr. Rachel Adams</h3>
+                            <p>MD, FAAFP</p>
+                            <a href="doctor-detail.html">View Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide doctor-card">
+                        <div class="doctor-image">
+                            <img src="images/doctor-6.jpg" alt="Dr. James Wilson">
+                        </div>
+                        <div class="doctor-content">
+                            <span class="specialty">Diagnostics &amp; Imaging</span>
+                            <h3>Dr. James Wilson</h3>
+                            <p>MD, FACR</p>
+                            <a href="doctor-detail.html">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button type="button" class="button-prev" aria-label="Previous Doctor">&larr;</button>
+                <button type="button" class="button-next" aria-label="Next Doctor">&rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== APPOINTMENT CTA ==================== -->
+    <section class="hm-appointment fw">
+        <div class="container">
+            <div class="appointment-box">
+                <div class="appointment-content">
+                    <span class="section-label">YOUR HEALTH CAN'T WAIT</span>
+                    <h2>Ready to Take the Next Step?</h2>
+                    <p>
+                        Schedule an appointment with one of our experienced healthcare professionals today.
+                    </p>
+
+                    <div class="appointment-actions">
+                        <a href="appointments.html" class="button">Book an Appointment</a>
+                        <a href="tel:+18005550199" class="outline-button">Call Us</a>
+                    </div>
+                </div>
+
+                <div class="appointment-image">
+                    <img src="images/appointment-doc.jpg" alt="Medical consultation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS (Owl Carousel) ==================== -->
+    <section class="hm-testimonials fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">PATIENT STORIES</span>
+                <h2>Trusted by the People We Care For</h2>
+            </div>
+
+            <div class="testi-blck owl-carousel">
+                <div class="testimonial">
+                    <div class="rating">★★★★★</div>
+                    <blockquote>
+                        "The entire team made me feel comfortable, listened to and genuinely cared for. From the reception staff to Dr. Mitchell, the level of attention was extraordinary."
+                    </blockquote>
+                    <div class="patient">
+                        <strong>Emily R.</strong>
+                        <span>Verified Patient</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="rating">★★★★★</div>
+                    <blockquote>
+                        "The cardiology department provided swift diagnosis and a clear treatment roadmap that gave me my active lifestyle back. Forever thankful for their expertise."
+                    </blockquote>
+                    <div class="patient">
+                        <strong>Robert M.</strong>
+                        <span>Verified Patient</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="rating">★★★★★</div>
+                    <blockquote>
+                        "Booking was seamless, wait time was under 5 minutes, and Dr. Adams took the time to answer every question thoroughly. The best clinical experience in the city."
+                    </blockquote>
+                    <div class="patient">
+                        <strong>Sophia T.</strong>
+                        <span>Verified Patient</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATISTICS SECTION ==================== -->
+    <section class="hm-stats fw">
+        <div class="container">
+            <div class="stats-blocks">
+                <div class="stats-item">
+                    <span class="stat-number" data-count="25" data-suffix="+">25+</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+
+                <div class="stats-item">
+                    <span class="stat-number" data-count="50" data-suffix="K+">50K+</span>
+                    <span class="stat-label">Patients Served</span>
+                </div>
+
+                <div class="stats-item">
+                    <span class="stat-number" data-count="40" data-suffix="+">40+</span>
+                    <span class="stat-label">Medical Specialists</span>
+                </div>
+
+                <div class="stats-item">
+                    <span class="stat-number" data-count="98" data-suffix="%">98%</span>
+                    <span class="stat-label">Patient Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="hm-faq fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">COMMON QUESTIONS</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about preparing for visits, billing, and patient services.</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-section" id="faq-1">
+                    <a class="accordion-section-title active" href="#faq-1">How do I schedule an appointment?</a>
+                    <div class="accordion-section-content open" style="display: block;">
+                        <p>You can schedule an appointment online using our interactive booking form, by calling our dedicated patient desk at +1 (800) 555-0199, or via our 24/7 patient portal. Same-day appointments are available for urgent consultations.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section" id="faq-2">
+                    <a class="accordion-section-title" href="#faq-2">Do you accept insurance?</a>
+                    <div class="accordion-section-content">
+                        <p>Yes, we accept major national and regional health insurance providers including Blue Cross Blue Shield, Aetna, Cigna, Medicare, UnitedHealthcare, and Humana. Our billing team will verify your benefits prior to your appointment.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section" id="faq-3">
+                    <a class="accordion-section-title" href="#faq-3">What should I bring to my appointment?</a>
+                    <div class="accordion-section-content">
+                        <p>Please bring a government-issued photo ID, your active insurance card, a list of current medications and supplements, and any pertinent previous medical records or diagnostic scans from external providers.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section" id="faq-4">
+                    <a class="accordion-section-title" href="#faq-4">How can I access my medical records?</a>
+                    <div class="accordion-section-content">
+                        <p>Medical records are accessible 24/7 through our secure HIPAA-compliant Patient Portal. You can view lab results, physician notes, and immunization records, or request formal physical copies through our medical records office.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section" id="faq-5">
+                    <a class="accordion-section-title" href="#faq-5">Do you offer telehealth appointments?</a>
+                    <div class="accordion-section-content">
+                        <p>Yes, virtual consultations are offered across primary care, follow-up cardiology visits, mental health, and prescription reviews. You can connect securely from any smartphone, tablet, or computer.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section" id="faq-6">
+                    <a class="accordion-section-title" href="#faq-6">How do I prepare for a diagnostic test?</a>
+                    <div class="accordion-section-content">
+                        <p>Preparation varies depending on whether you are undergoing bloodwork (which may require 8-12 hours fasting), ultrasound, MRI, or CT scans. Our clinical team sends personalized prep instructions 48 hours prior to your scheduled test.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG / HEALTH RESOURCES ==================== -->
+    <section class="hm-blog fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">HEALTH INSIGHTS</span>
+                <h2>Latest Medical News &amp; Guidance</h2>
+                <p>Evidence-based articles written by our medical staff to help you make informed decisions.</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-1.jpg" alt="Cardiologist monitoring heart health">
+                        <span class="blog-category">Cardiology</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">September 2, 2026</span>
+                        <h3>5 Ways to Improve Your Heart Health</h3>
+                        <p>Practical lifestyle interventions, aerobic routines, and dietary adjustments proven to optimize cardiovascular resilience.</p>
+                        <a href="service-detail.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-2.jpg" alt="Physician reviewing diagnostic tests">
+                        <span class="blog-category">Diagnostics</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">August 28, 2026</span>
+                        <h3>Understanding Preventive Healthcare</h3>
+                        <p>Why regular screenings and baseline metabolic panels are your best defense against chronic health conditions.</p>
+                        <a href="service-detail.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog-3.jpg" alt="Patient scheduling annual checkup">
+                        <span class="blog-category">Wellness</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">August 19, 2026</span>
+                        <h3>When Should You Schedule a Health Checkup?</h3>
+                        <p>A comprehensive age-by-age guide to essential immunizations, blood pressure screenings, and specialized physicals.</p>
+                        <a href="service-detail.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="newsletter-sec fw">
+        <div class="container">
+            <div class="newsletter-box">
+                <div>
+                    <span>HEALTH INSIGHTS</span>
+                    <h2>Stay Informed About Your Health</h2>
+                    <p>Get helpful healthcare tips and updates delivered to your inbox.</p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div class="site-footer fw">
+        <div class="container">
+            <div class="ftmenu fw">
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="ftr-blocks fw">
+                <div class="footer-column">
+                    <h3>Healthcare</h3>
+                    <p>
+                        Compassionate healthcare powered by experience, technology and a commitment to every patient.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33zM9.75 15.02l.02-6.54 5.75 3.27-5.77 3.27z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">Patient Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>
+                        123 Medical Center Drive<br>
+                        New York, NY 10001
+                    </p>
+                    <p>
+                        <a href="tel:+18005550199">+1 (800) 555-0199</a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Hours</h3>
+                    <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
+                    <p>Saturday: 9:00 AM – 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+
+                    <a href="appointments.html" class="button">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrights fw">
+            <div class="container">
+                <div class="cpy-inr">
+                    <p class="copy-para">© 2026 Healthcare. All Rights Reserved.</p>
+                </div>
+                <div class="ftrlink">
+                    <ul class="copyrightmenu">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

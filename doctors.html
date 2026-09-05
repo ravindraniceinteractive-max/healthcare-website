@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors & Specialists | Healthcare</title>
+    <meta name="description" content="Meet our board-certified medical physicians and surgeons. Filter by specialty and book a direct consultation online.">
+    <link rel="canonical" href="doctors.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/home-responsive.css">
+    <link rel="stylesheet" href="css/inner-pages.css">
+    <link rel="stylesheet" href="css/inner-responsive.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper fw">
+
+    <!-- ==================== HEADER ==================== -->
+    <div class="head-sec fw f-nav">
+        <div class="logo-menu fw">
+            <div class="container">
+                <div class="logo-menu-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" width="403" height="72" alt="Healthcare">
+                        </a>
+
+                        <a class="tab-call" href="tel:+18005550199">
+                            <span class="svg-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                            </span>
+                            <span class="text">Call</span>
+                        </a>
+
+                        <button type="button" class="showhide" onclick="toggleMenu();" aria-label="Toggle navigation">
+                            <span class="menuBar menuBar-1"></span>
+                            <span class="menuBar menuBar-2"></span>
+                            <span class="menuBar menuBar-3"></span>
+                        </button>
+                    </div>
+
+                    <div class="topmenu">
+                        <ul class="primary-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="services.html">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="service-detail.html">Cardiology</a></li>
+                                    <li><a href="services.html">Primary Care</a></li>
+                                    <li><a href="services.html">Women's Health</a></li>
+                                    <li><a href="services.html">Diagnostics</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="doctors.html">Doctors</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo-rit">
+                        <div class="top-rit">
+                            <a class="header-phone" href="tel:+18005550199">
+                                <span class="svg-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                                </span>
+                                <span>
+                                    <small>Call Us Today</small>
+                                    +1 (800) 555-0199
+                                </span>
+                            </a>
+
+                            <a href="appointments.html" class="button">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-button-container fw">
+            <button class="mobileMenuToggle" onclick="toggleMenu();" aria-label="Open mobile menu">
+                <span class="svg-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </span>
+                <span class="menu-text">Menu</span>
+            </button>
+
+            <a class="mobi-call" href="tel:+18005550199">
+                <span class="svg-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                </span>
+                <span class="button-text">Call</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== MOBILE NAVIGATION DRAWER ==================== -->
+    <div class="mobinav">
+        <button type="button" class="menuClose" onclick="toggleMenu();" aria-label="Close mobile menu">&times;</button>
+        <ul class="primary-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="menu-item-has-children">
+                <a href="services.html">Services</a>
+                <span class="drop close"></span>
+                <ul class="sub-menu">
+                    <li><a href="service-detail.html">Cardiology</a></li>
+                    <li><a href="services.html">Primary Care</a></li>
+                    <li><a href="services.html">Women's Health</a></li>
+                    <li><a href="services.html">Diagnostics</a></li>
+                </ul>
+            </li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="top-call">
+            <p>
+                <a href="tel:+18005550199">
+                    <span>Call Us Today</span>
+                    +1 (800) 555-0199
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="mobinav-backdrop"></div>
+
+    <!-- ==================== INNER BANNER ==================== -->
+    <div class="inner-banner fw">
+        <div class="container">
+            <div class="banner-inner-content">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Doctors</li>
+                </ul>
+                <h1>Meet Our Medical Specialists</h1>
+                <p>
+                    Our multidisciplinary medical staff includes nationally recognized clinicians, research fellows, and skilled surgeons committed to patient-first medicine.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== DOCTORS DIRECTORY ==================== -->
+    <section class="doctors-directory-sec fw">
+        <div class="container">
+            <!-- Specialty Filter Buttons -->
+            <div class="filter-bar-wrapper doctor-filter-bar">
+                <button type="button" class="filter-btn active" data-filter="all">All Specialists</button>
+                <button type="button" class="filter-btn" data-filter="cardiology">Cardiology</button>
+                <button type="button" class="filter-btn" data-filter="neurology">Neurology</button>
+                <button type="button" class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+                <button type="button" class="filter-btn" data-filter="orthopedics">Orthopedics</button>
+                <button type="button" class="filter-btn" data-filter="primary-care">Primary Care</button>
+                <button type="button" class="filter-btn" data-filter="diagnostics">Diagnostics</button>
+            </div>
+
+            <!-- Doctor Cards Catalog -->
+            <div class="doctors-grid-catalog">
+                <!-- Doctor 1: Cardiology -->
+                <article class="doctor-card doctor-item" data-category="cardiology">
+                    <div class="doctor-image">
+                        <img src="images/doctor-1.jpg" alt="Dr. Sarah Mitchell">
+                    </div>
+                    <div class="doctor-content">
+                        <span class="specialty">Cardiology</span>
+                        <h3>Dr. Sarah Mitchell</h3>
+                        <p>MD, FACC • 18 Years Experience</p>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">Specializes in clinical cardiology, stress testing, lipid control, and preventative cardiovascular intervention.</p>
+                        <div style="display: flex; gap: 10px; margin-top: auto;">
+                            <a href="doctor-detail.html" class="outline-button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Profile</a>
+                            <a href="appointments.html" class="button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Book</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Doctor 2: Neurology -->
+                <article class="doctor-card doctor-item" data-category="neurology">
+                    <div class="doctor-image">
+                        <img src="images/doctor-2.jpg" alt="Dr. Marcus Vance">
+                    </div>
+                    <div class="doctor-content">
+                        <span class="specialty">Neurology</span>
+                        <h3>Dr. Marcus Vance</h3>
+                        <p>MD, PhD • 15 Years Experience</p>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">Focused on neurovascular disorders, stroke recovery, chronic migraine management, and neuromuscular care.</p>
+                        <div style="display: flex; gap: 10px; margin-top: auto;">
+                            <a href="doctor-detail.html" class="outline-button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Profile</a>
+                            <a href="appointments.html" class="button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Book</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Doctor 3: Pediatrics -->
+                <article class="doctor-card doctor-item" data-category="pediatrics">
+                    <div class="doctor-image">
+                        <img src="images/doctor-3.jpg" alt="Dr. Elena Rostova">
+                    </div>
+                    <div class="doctor-content">
+                        <span class="specialty">Pediatrics</span>
+                        <h3>Dr. Elena Rostova</h3>
+                        <p>MD, FAAP • 12 Years Experience</p>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">Expert in infant development, pediatric allergy prevention, adolescent care, and childhood immunizations.</p>
+                        <div style="display: flex; gap: 10px; margin-top: auto;">
+                            <a href="doctor-detail.html" class="outline-button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Profile</a>
+                            <a href="appointments.html" class="button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Book</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Doctor 4: Orthopedics -->
+                <article class="doctor-card doctor-item" data-category="orthopedics">
+                    <div class="doctor-image">
+                        <img src="images/doctor-4.jpg" alt="Dr. David Chen">
+                    </div>
+                    <div class="doctor-content">
+                        <span class="specialty">Orthopedics</span>
+                        <h3>Dr. David Chen</h3>
+                        <p>MD, FAAOS • 20 Years Experience</p>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">Leading orthopedic surgeon specializing in minimally invasive joint preservation and complex sports trauma.</p>
+                        <div style="display: flex; gap: 10px; margin-top: auto;">
+                            <a href="doctor-detail.html" class="outline-button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Profile</a>
+                            <a href="appointments.html" class="button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Book</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Doctor 5: Primary Care -->
+                <article class="doctor-card doctor-item" data-category="primary-care">
+                    <div class="doctor-image">
+                        <img src="images/doctor-5.jpg" alt="Dr. Rachel Adams">
+                    </div>
+                    <div class="doctor-content">
+                        <span class="specialty">Primary Care</span>
+                        <h3>Dr. Rachel Adams</h3>
+                        <p>MD, FAAFP • 14 Years Experience</p>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">Dedicated family practitioner guiding patients through routine health physicals and metabolic management.</p>
+                        <div style="display: flex; gap: 10px; margin-top: auto;">
+                            <a href="doctor-detail.html" class="outline-button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Profile</a>
+                            <a href="appointments.html" class="button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Book</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Doctor 6: Diagnostics -->
+                <article class="doctor-card doctor-item" data-category="diagnostics">
+                    <div class="doctor-image">
+                        <img src="images/doctor-6.jpg" alt="Dr. James Wilson">
+                    </div>
+                    <div class="doctor-content">
+                        <span class="specialty">Diagnostics</span>
+                        <h3>Dr. James Wilson</h3>
+                        <p>MD, FACR • 16 Years Experience</p>
+                        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">Chief radiologist with fellowship specialization in body MRI, CT coronary angiography, and PET/CT imaging.</p>
+                        <div style="display: flex; gap: 10px; margin-top: auto;">
+                            <a href="doctor-detail.html" class="outline-button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Profile</a>
+                            <a href="appointments.html" class="button" style="flex: 1; padding: 10px 14px; font-size: 0.88rem;">Book</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== APPOINTMENT CTA ==================== -->
+    <section class="hm-appointment fw">
+        <div class="container">
+            <div class="appointment-box">
+                <div class="appointment-content">
+                    <span class="section-label">EXPERT ADVICE</span>
+                    <h2>Need Help Choosing the Right Physician?</h2>
+                    <p>
+                        Our care coordinators can assist you with physician matching, insurance pre-authorization, and fast-track scheduling.
+                    </p>
+
+                    <div class="appointment-actions">
+                        <a href="appointments.html" class="button">Book an Appointment</a>
+                        <a href="tel:+18005550199" class="outline-button">Call Referral Desk</a>
+                    </div>
+                </div>
+
+                <div class="appointment-image">
+                    <img src="images/appointment-doc.jpg" alt="Medical consultation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div class="site-footer fw">
+        <div class="container">
+            <div class="ftmenu fw">
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="ftr-blocks fw">
+                <div class="footer-column">
+                    <h3>Healthcare</h3>
+                    <p>Compassionate healthcare powered by experience, technology and a commitment to every patient.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33zM9.75 15.02l.02-6.54 5.75 3.27-5.77 3.27z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">Patient Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>
+                        123 Medical Center Drive<br>
+                        New York, NY 10001
+                    </p>
+                    <p><a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Hours</h3>
+                    <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
+                    <p>Saturday: 9:00 AM – 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+
+                    <a href="appointments.html" class="button">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrights fw">
+            <div class="container">
+                <div class="cpy-inr">
+                    <p class="copy-para">© 2026 Healthcare. All Rights Reserved.</p>
+                </div>
+                <div class="ftrlink">
+                    <ul class="copyrightmenu">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

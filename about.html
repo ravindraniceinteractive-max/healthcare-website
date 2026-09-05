@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Healthcare Medical Center</title>
+    <meta name="description" content="Learn about our 25-year history of clinical excellence, our leadership team, our compassionate mission, and our state-of-the-art facilities.">
+    <link rel="canonical" href="about.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/home-responsive.css">
+    <link rel="stylesheet" href="css/inner-pages.css">
+    <link rel="stylesheet" href="css/inner-responsive.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper fw">
+
+    <!-- ==================== HEADER ==================== -->
+    <div class="head-sec fw f-nav">
+        <div class="logo-menu fw">
+            <div class="container">
+                <div class="logo-menu-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" width="403" height="72" alt="Healthcare">
+                        </a>
+
+                        <a class="tab-call" href="tel:+18005550199">
+                            <span class="svg-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                            </span>
+                            <span class="text">Call</span>
+                        </a>
+
+                        <button type="button" class="showhide" onclick="toggleMenu();" aria-label="Toggle navigation">
+                            <span class="menuBar menuBar-1"></span>
+                            <span class="menuBar menuBar-2"></span>
+                            <span class="menuBar menuBar-3"></span>
+                        </button>
+                    </div>
+
+                    <div class="topmenu">
+                        <ul class="primary-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="about.html">About</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="services.html">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="service-detail.html">Cardiology</a></li>
+                                    <li><a href="services.html">Primary Care</a></li>
+                                    <li><a href="services.html">Women's Health</a></li>
+                                    <li><a href="services.html">Diagnostics</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="doctors.html">Doctors</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo-rit">
+                        <div class="top-rit">
+                            <a class="header-phone" href="tel:+18005550199">
+                                <span class="svg-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                                </span>
+                                <span>
+                                    <small>Call Us Today</small>
+                                    +1 (800) 555-0199
+                                </span>
+                            </a>
+
+                            <a href="appointments.html" class="button">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-button-container fw">
+            <button class="mobileMenuToggle" onclick="toggleMenu();" aria-label="Open mobile menu">
+                <span class="svg-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </span>
+                <span class="menu-text">Menu</span>
+            </button>
+
+            <a class="mobi-call" href="tel:+18005550199">
+                <span class="svg-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+                </span>
+                <span class="button-text">Call</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== MOBILE NAVIGATION DRAWER ==================== -->
+    <div class="mobinav">
+        <button type="button" class="menuClose" onclick="toggleMenu();" aria-label="Close mobile menu">&times;</button>
+        <ul class="primary-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="menu-item-has-children">
+                <a href="services.html">Services</a>
+                <span class="drop close"></span>
+                <ul class="sub-menu">
+                    <li><a href="service-detail.html">Cardiology</a></li>
+                    <li><a href="services.html">Primary Care</a></li>
+                    <li><a href="services.html">Women's Health</a></li>
+                    <li><a href="services.html">Diagnostics</a></li>
+                </ul>
+            </li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="top-call">
+            <p>
+                <a href="tel:+18005550199">
+                    <span>Call Us Today</span>
+                    +1 (800) 555-0199
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="mobinav-backdrop"></div>
+
+    <!-- ==================== INNER BANNER ==================== -->
+    <div class="inner-banner fw">
+        <div class="container">
+            <div class="banner-inner-content">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">About Us</li>
+                </ul>
+                <h1>Pioneering Compassionate Medicine for Over 25 Years</h1>
+                <p>
+                    From humble beginnings as a neighborhood outpatient clinic to an award-winning integrated medical system, discover the vision that guides our healthcare team every day.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ABOUT ORGANIZATION ==================== -->
+    <section class="inner-about fw">
+        <div class="container">
+            <div class="about-intro-grid">
+                <div class="about-intro-text">
+                    <span class="section-label">OUR HERITAGE</span>
+                    <h2>A Relentless Commitment to Patient Well-Being</h2>
+                    <p>
+                        Founded in 2001, Healthcare was established on a simple yet revolutionary premise: that medicine achieves its greatest breakthroughs when clinical precision is paired with genuine empathy and human warmth.
+                    </p>
+                    <p>
+                        Today, our campus spans six specialized pavilions, encompassing advanced imaging centers, state-of-the-art robotic surgery suites, dedicated pediatric wards, and outpatient wellness clinics. Every corridor, examination suite, and consultation room is designed to foster reassurance, accessibility, and healing.
+                    </p>
+                    <a href="appointments.html" class="button">Schedule a Visit</a>
+                </div>
+
+                <div class="about-intro-gallery">
+                    <div class="about-gallery-card">
+                        <img src="images/about-main.jpg" alt="Hospital architectural center">
+                    </div>
+                    <div class="about-gallery-card">
+                        <img src="images/about-team.jpg" alt="Medical doctors in consultation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MISSION / VISION ==================== -->
+    <section class="mission-section fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">GUIDING PRINCIPLES</span>
+                <h2>Our Mission, Vision, and Promise</h2>
+                <p>Our daily work is rooted in clear, measurable standards that prioritize your health above all else.</p>
+            </div>
+
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="icon-wrap">✦</div>
+                    <h3>Our Mission</h3>
+                    <p>To preserve, heal, and enhance the quality of life for every individual through world-class clinical expertise, technological innovation, and deeply respectful bedside care.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="icon-wrap">★</div>
+                    <h3>Our Vision</h3>
+                    <p>To be the nation’s premier patient-first healthcare organization, setting benchmarks in medical research, diagnostic precision, and holistic preventative medicine.</p>
+                </div>
+
+                <div class="mission-card">
+                    <div class="icon-wrap">♥</div>
+                    <h3>Our Promise</h3>
+                    <p>We pledge transparent communication, accessible specialists, honest guidance, and comprehensive support at every step of your diagnostic and recovery path.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VALUES SECTION ==================== -->
+    <section class="values-section fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">CORE VALUES</span>
+                <h2>What Sets Healthcare Apart</h2>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-item">
+                    <span class="num-tag">01</span>
+                    <h4>Clinical Integrity</h4>
+                    <p>Evidence-based therapeutics and rigorous medical ethics guide every physician recommendation.</p>
+                </div>
+                <div class="value-item">
+                    <span class="num-tag">02</span>
+                    <h4>Compassion First</h4>
+                    <p>We listen patiently and address fears with kindness, validating each patient’s unique circumstance.</p>
+                </div>
+                <div class="value-item">
+                    <span class="num-tag">03</span>
+                    <h4>Technological Agility</h4>
+                    <p>Continuous investment in cutting-edge diagnostic scanners, telemetry, and non-invasive procedures.</p>
+                </div>
+                <div class="value-item">
+                    <span class="num-tag">04</span>
+                    <h4>Total Transparency</h4>
+                    <p>Clear treatment alternatives, open billing practices, and effortless access to digital health records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LEADERSHIP SECTION ==================== -->
+    <section class="leadership-section fw">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">EXECUTIVE LEADERSHIP</span>
+                <h2>Experienced Medical Leaders</h2>
+                <p>Our executive team brings together decades of distinguished hospital administration and clinical prowess.</p>
+            </div>
+
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-img">
+                        <img src="images/doctor-1.jpg" alt="Dr. Sarah Mitchell">
+                    </div>
+                    <div class="leader-info">
+                        <h4>Dr. Sarah Mitchell</h4>
+                        <span class="role">Chief Medical Officer</span>
+                        <p>Harvard Medical School graduate with 20+ years steering cardiovascular clinical governance.</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-img">
+                        <img src="images/doctor-2.jpg" alt="Dr. Marcus Vance">
+                    </div>
+                    <div class="leader-info">
+                        <h4>Dr. Marcus Vance</h4>
+                        <span class="role">Head of Neurological Care</span>
+                        <p>Pioneer in non-invasive neurovascular therapy and clinical neurology research.</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-img">
+                        <img src="images/doctor-3.jpg" alt="Dr. Elena Rostova">
+                    </div>
+                    <div class="leader-info">
+                        <h4>Dr. Elena Rostova</h4>
+                        <span class="role">Director of Pediatrics</span>
+                        <p>Dedicated advocate for pediatric developmental wellness and maternal health policy.</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-img">
+                        <img src="images/doctor-4.jpg" alt="Dr. David Chen">
+                    </div>
+                    <div class="leader-info">
+                        <h4>Dr. David Chen</h4>
+                        <span class="role">Chief Surgical Officer</span>
+                        <p>Fellow of the American Academy of Orthopaedic Surgeons specializing in reconstructive surgery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HEALTHCARE STATISTICS ==================== -->
+    <section class="hm-stats fw">
+        <div class="container">
+            <div class="stats-blocks">
+                <div class="stats-item">
+                    <span class="stat-number" data-count="25" data-suffix="+">25+</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stat-number" data-count="50" data-suffix="K+">50K+</span>
+                    <span class="stat-label">Patients Served</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stat-number" data-count="40" data-suffix="+">40+</span>
+                    <span class="stat-label">Medical Specialists</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stat-number" data-count="98" data-suffix="%">98%</span>
+                    <span class="stat-label">Patient Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-us-sec fw">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <span class="section-label">WHY PATIENTS CHOOSE US</span>
+                    <h2>A Patient-First Philosophy That Produces Better Results</h2>
+                    <p>
+                        We understand that selecting a medical home is one of the most critical decisions you make for yourself and your loved ones. Here is why thousands of families trust us year after year.
+                    </p>
+
+                    <div class="why-us-cards">
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> Board-Certified Experts</h4>
+                            <p>Multi-disciplinary teams that collaborate directly on complex diagnostic reviews.</p>
+                        </div>
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> Rapid Testing Turnaround</h4>
+                            <p>On-site imaging and accredited laboratory facilities deliver answers within hours.</p>
+                        </div>
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> 360° Support Network</h4>
+                            <p>From social work and nutritionists to physical therapists, care extends beyond the exam room.</p>
+                        </div>
+                        <div class="why-us-card">
+                            <h4><span class="dot"></span> Modern Telehealth</h4>
+                            <p>Easily message your doctor, request prescriptions, and consult via video securely.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-us-image">
+                    <div class="why-us-image-inner">
+                        <img src="images/why-us.jpg" alt="Compassionate healthcare doctors">
+                    </div>
+                    <div class="stat-floating-card">
+                        <strong>98%</strong>
+                        <span>Patient Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== APPOINTMENT CTA ==================== -->
+    <section class="hm-appointment fw">
+        <div class="container">
+            <div class="appointment-box">
+                <div class="appointment-content">
+                    <span class="section-label">CONNECT WITH US</span>
+                    <h2>Experience Healthcare the Way It Should Be.</h2>
+                    <p>
+                        Consult with our physicians today and experience the peace of mind that comes with dedicated clinical expertise.
+                    </p>
+
+                    <div class="appointment-actions">
+                        <a href="appointments.html" class="button">Book an Appointment</a>
+                        <a href="tel:+18005550199" class="outline-button">Call Us</a>
+                    </div>
+                </div>
+
+                <div class="appointment-image">
+                    <img src="images/appointment-doc.jpg" alt="Medical consultation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div class="site-footer fw">
+        <div class="container">
+            <div class="ftmenu fw">
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="ftr-blocks fw">
+                <div class="footer-column">
+                    <h3>Healthcare</h3>
+                    <p>Compassionate healthcare powered by experience, technology and a commitment to every patient.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33zM9.75 15.02l.02-6.54 5.75 3.27-5.77 3.27z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">Patient Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>
+                        123 Medical Center Drive<br>
+                        New York, NY 10001
+                    </p>
+                    <p><a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Hours</h3>
+                    <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
+                    <p>Saturday: 9:00 AM – 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+
+                    <a href="appointments.html" class="button">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrights fw">
+            <div class="container">
+                <div class="cpy-inr">
+                    <p class="copy-para">© 2026 Healthcare. All Rights Reserved.</p>
+                </div>
+                <div class="ftrlink">
+                    <ul class="copyrightmenu">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

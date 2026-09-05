@@ -1,0 +1,41 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403 72" width="403" height="72">
+  <defs>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e384c" />
+      <stop offset="100%" stop-color="#00a896" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2ec4b6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0e384c" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Emblem Icon -->
+  <g transform="translate(6, 6)" filter="url(#shadow)">
+    <!-- Base Rounded Square -->
+    <rect x="0" y="0" width="60" height="60" rx="16" fill="url(#medGrad)" />
+    
+    <!-- Medical Cross -->
+    <path d="M30 14 V46 M14 30 H46" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Dynamic Vital / Pulse Dot Overlay -->
+    <circle cx="30" cy="30" r="4.5" fill="#2ec4b6" />
+    <path d="M22 30 Q26 23 30 30 T38 30" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+  </g>
+
+  <!-- Wordmark Text -->
+  <g transform="translate(80, 0)">
+    <!-- Main Name -->
+    <text x="0" y="42" font-family="'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#0e384c" letter-spacing="-0.5">
+      Health<tspan fill="#00a896">care</tspan>
+    </text>
+    
+    <!-- Badge / Subtitle -->
+    <text x="2" y="58" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#64748b" letter-spacing="2.8">
+      ADVANCED CLINIC &amp; SPECIALISTS
+    </text>
+  </g>
+</svg>
